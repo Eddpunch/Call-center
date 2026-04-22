@@ -1,0 +1,9 @@
+/call-center (Root)
+├── .gitignore          <-- Crucial (tells GitHub to ignore node_modules)
+├── package.json        <-- Lists your dependencies
+├── README.md           <-- Documentation
+├── public/             <-- Static assets
+└── src/                <-- Your code
+    ├── api/            <-- Where your base44Client lives
+    ├── components/     <-- Your UI components
+    └── pages/ (or app/) <-- Your Leads.js file
