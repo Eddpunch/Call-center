@@ -1,0 +1,48 @@
+{
+  "name": "CallLog",
+  "type": "object",
+  "properties": {
+    "lead_id": {
+      "type": "string"
+    },
+    "lead_name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "agent": {
+      "type": "string"
+    },
+    "outcome": {
+      "type": "string",
+      "enum": [
+        "answered",
+        "no_answer",
+        "voicemail",
+        "busy",
+        "callback_requested",
+        "interested",
+        "not_interested",
+        "converted",
+        "do_not_call"
+      ]
+    },
+    "duration_seconds": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "called_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "follow_up_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "lead_id",
+ 
